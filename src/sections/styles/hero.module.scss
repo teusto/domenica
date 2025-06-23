@@ -1,0 +1,61 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.hero_wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .hero_logo {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2.5rem;
+        height: auto;
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .hero_title {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        h1 {
+            font-family: "foerte";
+            font-size: 4rem;
+            margin-bottom: -30px;
+        }
+    }
+
+    .hero_image {
+        position: relative;
+        width: 100%;
+        flex: 3;
+        background-color: colors.$dom-red;
+
+        .hero_content {
+            position: absolute;
+            top: -3rem;
+            right: 4rem;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            p {
+                font-family: "abermono";
+                font-size: 1.25rem;
+                text-wrap: balance;
+                margin: 0;
+                font-weight: normal;
+                color: colors.$dom-black;
+            }
+        }
+    }
+
+
+}
