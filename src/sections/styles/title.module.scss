@@ -1,0 +1,20 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.title_wrapper {
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    h1 {
+        font-family: "foerte";
+        font-size: 5rem;
+        width: auto;
+        font-weight: normal;
+        color: colors.$dom-white;
+        text-align: center;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+}

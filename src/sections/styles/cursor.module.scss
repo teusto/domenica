@@ -1,0 +1,16 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: colors.$dom-white;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    pointer-events: none;
+    will-change: transform;
+    
+    // Optional: Add smooth opacity transitions
+    transition: opacity 0.3s ease;
+}
