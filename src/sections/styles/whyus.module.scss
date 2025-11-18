@@ -1,0 +1,31 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.whyus_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+    p {
+        font-size: 1.5rem;
+        color: colors.$dom-white;
+        text-align: center;
+    }
+    
+
+    // TODO: Add specific styling for each box content
+    .whyus_box:nth-child(1) {
+    }
+    .whyus_box:nth-child(2) {
+        background-color: yellow;
+    }
+    .whyus_box:nth-child(3) {
+    }   
+    .whyus_box:nth-child(4) {
+    }
+    .whyus_box:nth-child(5) {
+    }
+}

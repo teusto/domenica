@@ -12,6 +12,10 @@ interface CursorProps {
     hideOnLeave?: boolean;
     /** Custom inline styles */
     style?: React.CSSProperties;
+    /** Scale factor when hovering over elements with data-cursor-hover. Default: 2 */
+    hoverScale?: number;
+    /** Scale factor when clicking. Default: 0.8 */
+    clickScale?: number;
 }
 
 const Cursor = ({ 
@@ -19,7 +23,9 @@ const Cursor = ({
     easing = 0.15,
     size = 16,
     hideOnLeave = true,
-    style = {}
+    style = {},
+    hoverScale = 2,
+    clickScale = 0.8
 }: CursorProps) => {
     const cursorRef = useRef<HTMLDivElement>(null);
     const rafRef = useRef<number>(0);
@@ -29,6 +35,12 @@ const Cursor = ({
         currentX: 0,
         currentY: 0
     });
+    const scale = useRef({
+        target: 1,
+        current: 1
+    });
+    const isHovering = useRef(false);
+    const isClicking = useRef(false);
 
     useEffect(() => {
         // Track target mouse position
@@ -40,12 +52,26 @@ const Cursor = ({
             if (cursorRef.current) {
                 cursorRef.current.style.opacity = '1';
             }
+
+            // Check if hovering over an element with data-cursor-hover
+            const target = e.target as HTMLElement;
+            const hoverable = target.closest('[data-cursor-hover]');
+            isHovering.current = !!hoverable;
         };
 
         const handleMouseLeave = () => {
             if (hideOnLeave && cursorRef.current) {
                 cursorRef.current.style.opacity = '0';
             }
+            isHovering.current = false;
+        };
+
+        const handleMouseDown = () => {
+            isClicking.current = true;
+        };
+
+        const handleMouseUp = () => {
+            isClicking.current = false;
         };
 
         // Animation loop with easing
@@ -56,21 +82,31 @@ const Cursor = ({
             mouse.current.currentX += (mouse.current.x - mouse.current.currentX) * easing;
             mouse.current.currentY += (mouse.current.y - mouse.current.currentY) * easing;
 
-            // Update cursor position (center it by subtracting half size)
+            // Determine target scale based on hover/click state
+            scale.current.target = isClicking.current ? clickScale : isHovering.current ? hoverScale : 1;
+            
+            // Lerp scale for smooth transitions
+            scale.current.current += (scale.current.target - scale.current.current) * 0.15;
+
+            // Update cursor position and scale (center it by subtracting half size)
             const halfSize = size / 2;
             cursorRef.current.style.transform = 
-                `translate3d(${mouse.current.currentX - halfSize}px, ${mouse.current.currentY - halfSize}px, 0)`;
+                `translate3d(${mouse.current.currentX - halfSize}px, ${mouse.current.currentY - halfSize}px, 0) scale(${scale.current.current})`;
 
             rafRef.current = requestAnimationFrame(animate);
         };
 
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseleave', handleMouseLeave);
+        document.addEventListener('mousedown', handleMouseDown);
+        document.addEventListener('mouseup', handleMouseUp);
         rafRef.current = requestAnimationFrame(animate);
 
         return () => {
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseleave', handleMouseLeave);
+            document.removeEventListener('mousedown', handleMouseDown);
+            document.removeEventListener('mouseup', handleMouseUp);
             cancelAnimationFrame(rafRef.current);
         };
     }, [easing, size, hideOnLeave]);

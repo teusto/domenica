@@ -1,0 +1,40 @@
+@use "../../assets/styles/colors" as colors;
+
+.dock_wrapper {
+    width: 20%;
+    height: auto;
+    border: 2px solid colors.$dom-white;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .125rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: none;
+    .dock_separator {
+        width: 2px;
+        height: 2rem;
+        background-color: colors.$dom-white;
+    }
+    .dock_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            cursor: none;
+        }
+        svg {
+            width: 1.725rem;
+            height: auto;
+            color: colors.$dom-white;
+        }
+        img {
+            width: 2rem;
+            height: auto;
+        }
+    }
+}
