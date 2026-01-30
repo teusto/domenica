@@ -1,0 +1,20 @@
+@use "../../assets/styles/colors.scss";
+
+.upper_frame_wrapper {
+    background-color: colors.$dom-white;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .upper_frame_title {
+        font-family: "foerte";
+        font-size: .9rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: colors.$dom-black;
+    }
+}

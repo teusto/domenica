@@ -2,6 +2,9 @@
 @use "../assets/styles/colors.scss";
 
 .app_wrapper {
-    background-color: colors.$dom-red;
+    background-color: colors.$dom-white;
     color: colors.$dom-black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

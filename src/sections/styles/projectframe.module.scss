@@ -1,0 +1,66 @@
+@use "../../assets/styles/colors.scss";
+
+.project_frame_wrapper {
+    background-color: colors.$dom-black;
+    width: 100%;
+    height: 50%;
+    flex: 1;
+    position: relative;
+
+    .project_frame_content {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            filter: grayscale(100%);
+            transition: all .7s ease-in-out;
+
+            &:hover {
+                filter: grayscale(0);
+                object-position: top;
+            }
+        }
+    }
+
+    .project_frame_logo {
+        position: absolute;
+        right: 2rem;
+        bottom: 1rem;
+
+        img {
+            width: 3rem;
+        }
+    }
+
+    .project_frame_name {
+        color: colors.$dom-white;
+        font-family: "foerte";
+        font-size: .85rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 2rem;
+        bottom: 1rem;
+    }
+
+    .project_frame_slider {
+        position: absolute;
+        border-radius: 6px;
+        left: 50%;
+        top: 1rem;
+        transform: translateX(-50%);
+        width: 5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: colors.$dom-white-transparent40;
+        box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    }
+}

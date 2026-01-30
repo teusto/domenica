@@ -1,0 +1,16 @@
+@use "../../assets/styles/colors.scss";
+
+.slider_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    .slider_ball {
+        cursor: pointer;
+        width: .55rem;
+        height: .55rem;
+        border-radius: 50%;
+        background-color: colors.$dom-white-transparent70;
+    }
+}

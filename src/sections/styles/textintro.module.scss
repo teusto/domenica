@@ -1,0 +1,27 @@
+.text_intro_wrapper {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    width: 18rem;
+
+    .text_intro_text {
+        font-family: "mada";
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .text_intro_time {
+        font-family: "mada";
+        font-size: 28px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../../assets/styles/fonts.scss";
+@use "../../assets/styles/colors.scss";
+
+.book_button_wrapper {
+    background-color: colors.$dom-red;
+    color: colors.$dom-white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "mada";
+    font-weight: bold;
+    border: 1px solid colors.$dom-red;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    font-size: .85rem;
+    padding: 0.3rem 2rem;
+    text-transform: uppercase;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+    &:hover {
+        background-color: colors.$dom-black;
+        color: colors.$dom-red;
+        border: 1px solid colors.$dom-black;
+    }
+}
