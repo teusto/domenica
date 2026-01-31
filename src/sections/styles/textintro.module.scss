@@ -1,3 +1,5 @@
+@use "../../assets/styles/colors.scss";
+
 .text_intro_wrapper {
     position: absolute;
     top: 1rem;
@@ -12,6 +14,11 @@
         margin-bottom: 1.5rem;
         letter-spacing: 5px;
         text-transform: uppercase;
+        color: colors.$dom-black;
+
+        .text_intro_text_effect {
+            animation: colorBreath 3.5s ease-in-out infinite;
+        }
     }
 
     .text_intro_time {
@@ -23,5 +30,39 @@
         justify-content: space-between;
         text-transform: uppercase;
         letter-spacing: 5px;
+        margin-bottom: 1.5rem;
+
+        .separator {
+            animation: blink 1s steps(1) infinite;
+        }
+
+        span {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes colorBreath {
+
+    0%,
+    100% {
+        color: colors.$dom-black;
+    }
+
+    50% {
+        color: colors.$dom-red;
     }
 }

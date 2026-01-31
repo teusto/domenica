@@ -12,5 +12,10 @@
         height: .55rem;
         border-radius: 50%;
         background-color: colors.$dom-white-transparent70;
+        transition: background-color .3s ease;
+
+        &.active {
+            background-color: colors.$dom-white;
+        }
     }
 }
