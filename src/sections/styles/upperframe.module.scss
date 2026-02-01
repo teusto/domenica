@@ -18,3 +18,10 @@
         color: colors.$dom-black;
     }
 }
+
+@media (max-width: 768px) {
+    .upper_frame_wrapper {
+        padding: 1rem .5rem;
+        gap: 1rem;
+    }
+}

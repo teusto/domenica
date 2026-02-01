@@ -17,7 +17,7 @@
             object-fit: cover;
             object-position: bottom;
             filter: grayscale(100%);
-            transition: all .7s ease-in-out;
+            transition: all 1.5s ease-in-out;
 
             &:hover {
                 filter: grayscale(0);
@@ -45,6 +45,7 @@
         position: absolute;
         left: 2rem;
         bottom: 1rem;
+        cursor: pointer;
     }
 
     .project_frame_slider {
@@ -62,5 +63,20 @@
         align-items: center;
         background-color: colors.$dom-white-transparent40;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project_frame_name {
+        font-size: .6rem !important;
+        left: 1rem !important;
+    }
+
+    .project_frame_logo {
+        right: 1rem !important;
+
+        img {
+            width: 2rem !important;
+        }
     }
 }

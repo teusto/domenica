@@ -66,3 +66,26 @@
         color: colors.$dom-red;
     }
 }
+
+@media (max-width: 768px) {
+    .text_intro_wrapper {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+
+    .text_intro_text {
+        font-size: .8rem !important;
+        letter-spacing: 2.5px !important;
+    }
+
+    .text_intro_time {
+        font-size: .8rem !important;
+        letter-spacing: 2.5px !important;
+
+        span {
+            font-size: .8rem !important;
+        }
+    }
+}

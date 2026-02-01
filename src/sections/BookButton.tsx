@@ -2,7 +2,7 @@ import styles from "./styles/bookbutton.module.scss";
 
 const BookButton = () => {
     return (
-        <button className={styles.book_button_wrapper}>Book Introductory Call With Dom</button>
+        <a className={styles.book_button_wrapper} href="https://cal.eu/matheus-toscano-scpbb8/introductory-call-w-dom" target="_blank">Book Introductory Call With Dom</a>
     )
 }
 
