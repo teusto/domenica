@@ -17,7 +17,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.heroButtonContainer}>
                     <div className={styles.heroButton}>
-                        <CallToAction text={messages.hero.cta} />
+                        <CallToAction text={messages.hero.cta} href="https://cal.eu/matheus-toscano-scpbb8/introductory-call-w-dom" />
                     </div>
                 </div>
                 <div className={styles.heroText2}>

@@ -80,7 +80,7 @@ const Services = () => {
       <div className={styles.servicesDecisionHelperCTA}>
         <p>{messages.services.decisionHelper}</p>
         <div className={styles.servicesDecisionHelperCTAButton}>
-            <CallToAction text={messages.services.cta} />
+            <CallToAction text={messages.services.cta} href="https://cal.eu/matheus-toscano-scpbb8/introductory-call-w-dom"/>
         </div>
       </div>
     </section>

@@ -12,11 +12,12 @@ import CallToActionVideo from '../assets/imgs/veneza.mp4';
 
 interface CallToActionProps {
     text: string;
+    href?: string;
 }
 
-const CallToAction = ({ text }: CallToActionProps) => {
+const CallToAction = ({ text, href }: CallToActionProps) => {
     return (
-        <div className={styles.callToActionWrapper}>
+        <div className={styles.callToActionWrapper} onClick={() => href && window.open(href, '_blank')}>
             <div className={styles.callToActionContainer}>
                 <span>{text}</span>
                 <RiArrowRightBoxFill />
