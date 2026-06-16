@@ -88,10 +88,10 @@ export const MESSAGES_BY_LOCALE: Record<Locale, LocaleMessages> = {
       },
     },
     hero: {
-      lineOne: "turn ai generated prototypes into",
+      lineOne: "Turn AI generated prototypes into",
       lineTwo: "production-ready products",
       subtitle:
-        "we help founders launch faster, reduce technical risk, and prepare for growth",
+        "We help founders launch faster, reduce technical risk, and prepare for growth",
       cta: "Get Started",
       logoAlt: "Domenica Logo",
     },
@@ -213,10 +213,10 @@ export const MESSAGES_BY_LOCALE: Record<Locale, LocaleMessages> = {
       },
     },
     hero: {
-      lineOne: "trasforma i prototipi generati con ai in",
+      lineOne: "Trasforma i prototipi generati con AI in",
       lineTwo: "prodotti pronti per la produzione",
       subtitle:
-        "aiutiamo i founder a lanciare più velocemente, ridurre il rischio tecnico e prepararsi alla crescita",
+        "Aiutiamo i founder a lanciare più velocemente, ridurre il rischio tecnico e prepararsi alla crescita",
       cta: "Inizia ora",
       logoAlt: "Logo Domenica",
     },
@@ -338,10 +338,10 @@ export const MESSAGES_BY_LOCALE: Record<Locale, LocaleMessages> = {
       },
     },
     hero: {
-      lineOne: "transforme protótipos gerados por ai em",
-      lineTwo: "produtos prontos para produção",
+      lineOne: "Transforme seu MVP gerado por AI em",
+      lineTwo: "produto pronto para produção",
       subtitle:
-        "ajudamos founders a lançar mais rápido, reduzir risco técnico e se preparar para crescer",
+        "Ajudamos founders a lançar mais rápido, reduzir risco técnico e se preparar para crescer",
       cta: "Começar",
       logoAlt: "Logo Domenica",
     },
