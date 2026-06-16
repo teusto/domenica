@@ -1,0 +1,112 @@
+@use "../../assets/styles/colors" as *;
+@use "../../assets/styles/spacing" as *;
+@use "../../assets/styles/responsiveness" as *;
+
+.heroWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100svh;
+    .heroHeader {
+        width: 100%;
+        padding: $dom-padding-sections-components;
+
+        @media (max-width: $screen-sm-min) {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 48px;
+        }
+    }
+
+    .heroContent {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+     
+        .heroText1 {
+            font-family: "foerte";
+            font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+            text-align: left;
+            width: 50vw;
+            line-height: 1.2;
+            position: absolute;
+            left: 20%;
+            top: 10%;
+
+            @media (max-width: $screen-lg-min) {
+              width: 100%;
+              left: 0;
+              top: 0;
+            }
+
+            @media (max-width: $screen-sm-min) {
+            font-size: 1rem;
+              width: 100%;
+              left: 0;
+              top: 0;
+            }
+        }
+
+        .heroButtonContainer {
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            .heroButton {
+            }
+        }
+
+        .heroText2 {
+            font-family: "foerte";
+            font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+            text-align: right;
+            width: 50vw;
+            line-height: 1.2;
+            position: absolute;
+            right: 20%;
+            bottom: 10%;
+            
+            @media (max-width: $screen-lg-min) {
+              width: 100%;
+              right: 0;
+              bottom: 0;
+            }
+
+            @media (max-width: $screen-sm-min) {
+            font-size: 1rem;
+              width: 100%;
+              right: 0;
+              bottom: 0;
+            }
+        }
+    }
+
+    .subtitleContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: $dom-padding-sections-components;
+        h2 {
+            font-size: $dom-font-size-subtitle;
+            font-family: "grotesk";
+            text-align: center;
+            width: 38vw;
+
+            @media (max-width: $screen-lg-min) {
+              width: 100%;
+            }
+
+            @media (max-width: $screen-sm-min) {
+              width: 100%;
+              font-size: 1rem;
+            }
+        }
+    }
+}

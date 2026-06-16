@@ -1,0 +1,119 @@
+{
+  "languageSelector": {
+    "options": [
+      { "locale": "en-US", "label": "EN" },
+      { "locale": "it-IT", "label": "IT" },
+      { "locale": "pt-BR", "label": "PT" }
+    ]
+  },
+  "navScroller": {
+    "labels": {
+      "init": "home",
+      "problem": "problem",
+      "solution": "solution",
+      "services": "services",
+      "ship-safe": "assessment"
+    }
+  },
+  "hero": {
+    "lineOne": "turn ai generated prototypes into",
+    "lineTwo": "production-ready products",
+    "subtitle": "we help founders launch faster, reduce technical risk, and prepare for growth",
+    "cta": "Get Started",
+    "logoAlt": "Domenica Logo"
+  },
+  "problem": {
+    "cards": [
+      {
+        "title": "It works today. Will it work tomorrow?",
+        "description": "AI-generated products often look finished but hide architectural decisions that become expensive as usage grows."
+      },
+      {
+        "title": "Users find problems before you do.",
+        "description": "Security gaps, broken flows, and edge cases rarely appear during development. They appear when real users start clicking."
+      },
+      {
+        "title": "A pitch is not a business.",
+        "description": "Investors care about execution risk, not just product ideas. A prototype alone rarely answers those concerns."
+      },
+      {
+        "title": "Launching isn't the finish line.",
+        "description": "A product can function perfectly and still fail if the message, onboarding, and user journey don't convert."
+      }
+    ],
+    "summary": "Shipping is easy. Reliability is hard."
+  },
+  "solution": {
+    "titleLeft": "Find Your Risks",
+    "titleRight": "Ship Safe Framework™",
+    "wordCarousels": [
+      [
+        "Missing Validation",
+        "Missing Testing",
+        "Missing Documentation",
+        "Missing Support"
+      ],
+      ["Ship", "Verify", "Scale", "Convert"]
+    ],
+    "paragraphs": [
+      "Most AI-generated products don't fail because of ideas. They fail because of execution. Most founders skip the boring parts. That's why products break.",
+      "We help you build resilient systems from day one. We bridge the gap between AI prototypes and production-ready products."
+    ]
+  },
+  "services": {
+    "title": "Get unstuck at any stage of your product journey.",
+    "mappedQA": [
+      {
+        "question": "I have an idea",
+        "answers": [
+          "Architecture planning",
+          "Product development & Deployment",
+          "Analytics setup"
+        ]
+      },
+      {
+        "question": "I already built something with AI",
+        "answers": [
+          "Security review",
+          "Scalability review",
+          "Prioritized action plan"
+        ]
+      },
+      {
+        "question": "I'm preparing to pitch",
+        "answers": ["Landing page strategy", "Showcase demo"]
+      }
+    ],
+    "decisionHelper": "Not sure which service fits?",
+    "cta": "Let's chat"
+  },
+  "leadMagnet": {
+    "title": "Ship Safe Assessment™",
+    "description": "Most AI-generated products look finished long before they're ready. Answer 8 quick questions and discover where your biggest risks are before users, customers, or investors do.",
+    "meta": "Takes less than 2 minutes."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "name": "John Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Jane Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "John Smith",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Jane Smith",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  },
+  "bookButton": {
+    "label": "Book Introductory Call With Dom"
+  }
+}

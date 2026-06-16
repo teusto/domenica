@@ -1,0 +1,119 @@
+{
+  "languageSelector": {
+    "options": [
+      { "locale": "en-US", "label": "EN" },
+      { "locale": "it-IT", "label": "IT" },
+      { "locale": "pt-BR", "label": "PT" }
+    ]
+  },
+  "navScroller": {
+    "labels": {
+      "init": "início",
+      "problem": "problema",
+      "solution": "solução",
+      "services": "serviços",
+      "ship-safe": "assessment"
+    }
+  },
+  "hero": {
+    "lineOne": "transforme protótipos gerados por ai em",
+    "lineTwo": "produtos prontos para produção",
+    "subtitle": "ajudamos founders a lançar mais rápido, reduzir risco técnico e se preparar para crescer",
+    "cta": "Começar",
+    "logoAlt": "Logo Domenica"
+  },
+  "problem": {
+    "cards": [
+      {
+        "title": "Funciona hoje. Vai funcionar amanhã?",
+        "description": "Produtos gerados por AI muitas vezes parecem prontos, mas escondem decisões de arquitetura que ficam caras conforme o uso cresce."
+      },
+      {
+        "title": "Usuários encontram os problemas antes de você.",
+        "description": "Falhas de segurança, fluxos quebrados e casos de borda raramente aparecem no desenvolvimento. Eles surgem quando usuários reais começam a clicar."
+      },
+      {
+        "title": "Pitch não é negócio.",
+        "description": "Investidores se importam com risco de execução, não só com a ideia. Um protótipo sozinho raramente responde essas preocupações."
+      },
+      {
+        "title": "Lançar não é a linha de chegada.",
+        "description": "Um produto pode funcionar perfeitamente e ainda falhar se mensagem, onboarding e jornada do usuário não converterem."
+      }
+    ],
+    "summary": "Lançar é fácil. Confiabilidade é difícil."
+  },
+  "solution": {
+    "titleLeft": "Encontre seus riscos",
+    "titleRight": "Ship Safe Framework™",
+    "wordCarousels": [
+      [
+        "Falta validação",
+        "Falta testes",
+        "Falta documentação",
+        "Falta suporte"
+      ],
+      ["Lançar", "Validar", "Escalar", "Converter"]
+    ],
+    "paragraphs": [
+      "A maioria dos produtos com AI não falha por falta de ideia. Falha na execução. Muitos founders pulam as partes chatas. É por isso que os produtos quebram.",
+      "Ajudamos você a construir sistemas resilientes desde o primeiro dia. Fechamos a lacuna entre protótipos com AI e produtos prontos para produção."
+    ]
+  },
+  "services": {
+    "title": "Destrave seu produto em qualquer fase da jornada.",
+    "mappedQA": [
+      {
+        "question": "Eu tenho uma ideia",
+        "answers": [
+          "Planejamento de arquitetura",
+          "Desenvolvimento e deployment",
+          "Configuração de analytics"
+        ]
+      },
+      {
+        "question": "Já construí algo com AI",
+        "answers": [
+          "Revisão de segurança",
+          "Revisão de escalabilidade",
+          "Plano de ação priorizado"
+        ]
+      },
+      {
+        "question": "Estou me preparando para pitch",
+        "answers": ["Estratégia de landing page", "Demo de showcase"]
+      }
+    ],
+    "decisionHelper": "Não tem certeza de qual serviço é ideal?",
+    "cta": "Vamos conversar"
+  },
+  "leadMagnet": {
+    "title": "Ship Safe Assessment™",
+    "description": "A maioria dos produtos com AI parece pronta muito antes de realmente estar. Responda 8 perguntas rápidas e descubra seus maiores riscos antes de usuários, clientes ou investidores.",
+    "meta": "Leva menos de 2 minutos."
+  },
+  "testimonials": {
+    "title": "Depoimentos",
+    "items": [
+      {
+        "name": "John Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Jane Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "John Smith",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Jane Smith",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  },
+  "bookButton": {
+    "label": "Agende uma call introdutória com Dom"
+  }
+}

@@ -1,10 +1,21 @@
 @use "../assets/styles/fonts.scss";
 @use "../assets/styles/colors.scss";
+@use "../assets/styles/spacing.scss" as spacing;
+@use "../assets/styles/responsiveness.scss" as responsiveness;
 
 .app_wrapper {
     background-color: colors.$dom-white;
     color: colors.$dom-black;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 spacing.$dom-padding-sections-larger;
+
+    @media (max-width: 1024px) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: responsiveness.$screen-sm-min) {
+        padding: 0 1rem;
+    }
 }

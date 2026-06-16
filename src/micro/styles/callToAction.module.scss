@@ -1,0 +1,57 @@
+@use "../../assets/styles/colors" as *;
+
+.callToActionWrapper {
+  position: relative;
+  width: 220px;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 999px;
+
+  &:hover {
+    .callToActionContainer {
+      background-color: transparent;
+    }
+    .callToActionVideo {
+      display: block;
+    }
+  }
+
+  .callToActionContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "abermono";
+    font-size: 1rem;
+    color: $dom-white;
+    border-radius: 999px;
+    background-color: $dom-red;
+    padding: 10px 22px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 20;
+    will-change: transform;
+    transition: all 1s ease;
+  }
+
+  .callToActionVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
+    z-index: 10;
+    will-change: transform;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

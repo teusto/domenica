@@ -1,0 +1,48 @@
+@use "../../assets/styles/colors" as *;
+@use "../../assets/styles/spacing" as *;
+@use "../../assets/styles/responsiveness" as *;
+
+.navScrollerWrapper {
+  position: fixed;
+  right: 1rem;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 20;
+
+  @media (max-width: $screen-lg-min) {
+    display: none;
+  }
+
+  .navScrollerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.35rem;
+    text-align: right;
+  }
+
+  .navScrollerItem {
+    display: inline-flex;
+    text-decoration: none;
+    font-family: "abermono";
+    font-size: $dom-font-size-small;
+    line-height: 1;
+    color: rgba($dom-black, 0.45);
+    transform: scale(var(--item-scale, 1));
+    transform-origin: right center;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+    opacity: 0.75;
+
+    &:hover {
+      color: $dom-red;
+      opacity: 1;
+    }
+  }
+
+  .navScrollerItemActive {
+    color: $dom-red;
+    opacity: 1;
+    font-weight: 600;
+  }
+}
