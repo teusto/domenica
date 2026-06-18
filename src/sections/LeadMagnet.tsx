@@ -19,7 +19,9 @@ const LeadMagnet = () => {
           <h2>{messages.leadMagnet.title}</h2>
           <div>
             <p>{messages.leadMagnet.description}</p>
-            <code>{messages.leadMagnet.meta} <HiExternalLink /></code>
+            <code onClick={() => window.open("https://tally.so/r/ODrQ5p", "_blank")}>
+              {messages.leadMagnet.meta} <HiExternalLink />
+            </code>
           </div>
         </div>
         <div className={styles.leadMagnetRight}>
