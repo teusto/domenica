@@ -6,6 +6,8 @@ import {
 } from "shaders/react";
 import styles from "./styles/leadMagnet.module.scss";
 import { useLocale } from "../utils/locales/LocaleProvider";
+import { HiExternalLink } from "react-icons/hi";
+
 
 const LeadMagnet = () => {
   const { messages } = useLocale();
@@ -17,7 +19,7 @@ const LeadMagnet = () => {
           <h2>{messages.leadMagnet.title}</h2>
           <div>
             <p>{messages.leadMagnet.description}</p>
-            <code>{messages.leadMagnet.meta}</code>
+            <code>{messages.leadMagnet.meta} <HiExternalLink /></code>
           </div>
         </div>
         <div className={styles.leadMagnetRight}>

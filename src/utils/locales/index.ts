@@ -168,7 +168,7 @@ export const MESSAGES_BY_LOCALE: Record<Locale, LocaleMessages> = {
       title: "Ship Safe Assessment™",
       description:
         "Most AI-generated products look finished long before they're ready. Answer 8 quick questions and discover where your biggest risks are before users, customers, or investors do.",
-      meta: "Takes less than 2 minutes.",
+      meta: "Takes less than 2 minutes",
     },
     testimonials: {
       title: "Testimonials",
