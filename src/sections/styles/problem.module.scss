@@ -1,7 +1,7 @@
-@use '../../assets/styles/spacing' as *;
-@use '../../assets/styles/borders' as *;
-@use '../../assets/styles/colors' as *;
-@use '../../assets/styles/responsiveness' as *;
+@use "../../assets/styles/spacing" as *;
+@use "../../assets/styles/borders" as *;
+@use "../../assets/styles/colors" as *;
+@use "../../assets/styles/responsiveness" as *;
 
 .problemWrapper {
   width: 100%;
@@ -11,11 +11,35 @@
   align-items: center;
   padding: $dom-padding-sections-larger 0;
   gap: 4rem;
+  position: relative;
 
   @media (max-width: $screen-lg-min) {
     padding: 2rem 0;
   }
-  
+
+  .problemCardsStack {
+    position: relative;
+    width: 100%;
+  }
+
+  .problemBehind {
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    top: -1%;
+    left: -1%;
+    border-radius: $dom-radius;
+    background: #ff643d;
+    background: radial-gradient(
+      circle,
+      rgb(232, 59, 59) 80%,
+      rgba(227, 200, 66, 1) 91%,
+      rgba(20, 163, 161, 1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
   .problemCardsContainer {
     display: flex;
     border-radius: $dom-radius;
@@ -23,7 +47,9 @@
     overflow: hidden;
     width: 100%;
     height: 380px;
-    
+    position: relative;
+    z-index: 2;
+
     @media (max-width: $screen-lg-min) {
       height: auto;
       flex-wrap: wrap;
@@ -36,6 +62,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: $dom-white;
+    backdrop-filter: blur(20px);
+
+    &:hover {
+      background-color: transparent;
+      backdrop-filter: blur(300px);
+    }
 
     @media (max-width: $screen-sm-min) {
       gap: 2rem;
@@ -43,11 +76,11 @@
     .cardTitle {
       font-size: clamp(1.5rem, 4vw, 2rem);
       font-weight: bold;
-      font-family: 'grotesk';
+      font-family: "grotesk";
     }
     .cardDescription {
       font-size: $dom-font-size-body;
-      font-family: 'abermono';
+      font-family: "abermono";
 
       @media (max-width: $screen-sm-min) {
         font-size: 0.875rem;
@@ -56,7 +89,7 @@
   }
   .problemText {
     width: 50%;
-    font-family: 'grotesk';
+    font-family: "grotesk";
     font-size: $dom-font-size-title;
     line-height: 1.2;
     text-align: center;

@@ -8,7 +8,17 @@
     align-items: center;
     justify-content: space-between;
     height: 100svh;
+
+    .heroBars {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     .heroHeader {
+      z-index: 10;
         width: 100%;
         padding: $dom-padding-sections-components;
 
@@ -30,6 +40,8 @@
         align-items: center;
         position: relative;
      
+        z-index: 5;
+
         .heroText1 {
             font-family: "foerte";
             font-size: clamp(1.5rem, 1.8vw, 2.5rem);
@@ -89,6 +101,7 @@
     }
 
     .subtitleContainer {
+      z-index: 10;
         width: 100%;
         display: flex;
         justify-content: center;
